@@ -45,23 +45,23 @@ Before you begin, ensure you have met the following requirements:
    - Open the project in your IDE.
    - Run the `LoginForm` class to start.
 ## Usage
-**1. Default Admin Credentials**
+1. Default Admin Credentials
    - **Username:** admin
    - **Password:** admin123
-**2. Managing Patients**
+2. Managing Patients
    - Navigate to the Patient Page
    - Click Register to add a new patient record
    - You can view the Patient History to track previous visits and treatments
-**3. Inventory & Supplies**
+3. Inventory & Supplies
    - Go to Supplies Page
    - Add, update, delete, and search the stock of clinic supplies
    - The system will highlight color red if an item is low on stock (below 50)
    - Print button to generate a reports of list of supplies
-**4. Billing and Receipts**
+4. Billing and Receipts
    - Select a patient from the Queue
    - Input the services rendered and supplies based on the diagnosis of the patient
    - Auto generated receipt to view and print a billing statement via JasperReports
-**5. Database Interaction**
+5. Database Interaction
    - Any changes made in the GUI (Adding/Updating/Deleting) are reflected in real-time in MySQL Workbench.
    - You can verify transactions by checking the receipts table.
 ## License
