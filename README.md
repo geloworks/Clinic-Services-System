@@ -45,5 +45,4 @@ Before you begin, ensure you have met the following requirements:
    - Open the project in your IDE.
    - Run the `LoginForm` class to start.
 ## License
-## ⚖️ License
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
