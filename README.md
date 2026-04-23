@@ -48,19 +48,45 @@ Before you begin, ensure you have met the following requirements:
 1. Default Admin Credentials
    - **Username:** admin
    - **Password:** admin123
+<img width="564" height="475" alt="Screenshot 2026-04-23 215614" src="https://github.com/user-attachments/assets/201b1ec9-d30b-4889-a90e-55f57b6bc18f" />
+
+
 2. Managing Patients
    - Navigate to the Patient Page
    - Click Register to add a new patient record
    - You can view the Patient History to track previous visits and treatments
+
+**Admin View**
+<img width="1553" height="862" alt="Screenshot 2026-04-23 215749" src="https://github.com/user-attachments/assets/fdf75f88-6a75-4fd3-af65-547a821013ee" />
+
+**Staff View**
+<img width="1553" height="856" alt="Screenshot 2026-04-23 215853" src="https://github.com/user-attachments/assets/ebfd82c8-d6bc-4631-9129-fb1debdb88be" />
+
+
+
 3. Inventory & Supplies
    - Go to Supplies Page
    - Add, update, delete, and search the stock of clinic supplies
    - The system will highlight color red if an item is low on stock (below 50)
    - Print button to generate a reports of list of supplies
+
+<img width="1562" height="856" alt="image" src="https://github.com/user-attachments/assets/7543f1dc-e518-47e2-b0aa-b1fc686ac063" />
+
 4. Billing and Receipts
    - Select a patient from the Queue
    - Input the services rendered and supplies based on the diagnosis of the patient
    - Auto generated receipt to view and print a billing statement via JasperReports
+
+**Diagnosis**
+<img width="848" height="766" alt="image" src="https://github.com/user-attachments/assets/80db87dc-a0d4-4471-ba03-daeaffa8f023" />
+
+**Billing**
+<img width="724" height="832" alt="image" src="https://github.com/user-attachments/assets/fca93568-f9ec-43f0-a27d-7d3668bd46bd" />
+
+**Receipt**
+<img width="1229" height="1015" alt="image" src="https://github.com/user-attachments/assets/5f1ba504-3da8-4ff0-a22f-2f08c9d37cf6" />
+
+
 5. Database Interaction
    - Any changes made in the GUI (Adding/Updating/Deleting) are reflected in real-time in MySQL Workbench.
    - You can verify transactions by checking the receipts table.
