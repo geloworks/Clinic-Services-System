@@ -1,0 +1,241 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="BillingReciept" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ecd082c8-79db-4cce-a748-dac8d2ce06c3">
+	<property name="com.jaspersoft.studio.report.description" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ClinicDB.jrdax"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<query language="sql"><![CDATA[select * from Receipts order by BillID desc limit 1]]></query>
+	<field name="BillID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="BillID"/>
+		<property name="com.jaspersoft.studio.field.label" value="BillID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="PatientID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="PatientID"/>
+		<property name="com.jaspersoft.studio.field.label" value="PatientID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="PatientName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PatientName"/>
+		<property name="com.jaspersoft.studio.field.label" value="PatientName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="PatientAge" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="PatientAge"/>
+		<property name="com.jaspersoft.studio.field.label" value="PatientAge"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="Service" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Service"/>
+		<property name="com.jaspersoft.studio.field.label" value="Service"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="ServiceCost" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="ServiceCost"/>
+		<property name="com.jaspersoft.studio.field.label" value="ServiceCost"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="SupplyCost" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="SupplyCost"/>
+		<property name="com.jaspersoft.studio.field.label" value="SupplyCost"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="BaseCost" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="BaseCost"/>
+		<property name="com.jaspersoft.studio.field.label" value="BaseCost"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="Discount" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="Discount"/>
+		<property name="com.jaspersoft.studio.field.label" value="Discount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="SubTotal" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="SubTotal"/>
+		<property name="com.jaspersoft.studio.field.label" value="SubTotal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="TotalAmountDue" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="TotalAmountDue"/>
+		<property name="com.jaspersoft.studio.field.label" value="TotalAmountDue"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="PhilHealthID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PhilHealthID"/>
+		<property name="com.jaspersoft.studio.field.label" value="PhilHealthID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="PhilHealthAmount" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="PhilHealthAmount"/>
+		<property name="com.jaspersoft.studio.field.label" value="PhilHealthAmount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="CashPaid" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="CashPaid"/>
+		<property name="com.jaspersoft.studio.field.label" value="CashPaid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="Changes" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="Changes"/>
+		<property name="com.jaspersoft.studio.field.label" value="Changes"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<field name="TransactionDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="TransactionDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="TransactionDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="receipts"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="92" splitType="Stretch">
+		<element kind="image" uuid="7b9203ef-4769-471a-abdb-b28a117ed34a" x="438" y="14" width="51" height="49">
+			<expression><![CDATA["C:/Users/Angelo Javier/Downloads/IconLogo.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="35f3ccea-a746-4657-9f7a-8d61b1a72450" x="40" y="51" width="298" height="40" forecolor="#1FB1DE" fontSize="27.0" hTextAlign="Left">
+			<text><![CDATA[MEDICAL RECEIPT]]></text>
+		</element>
+		<element kind="rectangle" uuid="af0468f7-85e6-459d-a976-207f82e60d22" x="-20" y="-20" width="270" height="30" forecolor="#3C4753" backcolor="#3C4753"/>
+		<element kind="staticText" uuid="22172c8a-635a-4a2a-ba10-36b43ad49660" x="412" y="59" width="110" height="30" fontSize="21.0" hTextAlign="Left">
+			<text><![CDATA[MediTECH]]></text>
+		</element>
+		<element kind="line" uuid="178e80b2-723c-483d-80a3-051140885e3d" x="40" y="91" width="480" height="1">
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+		</element>
+	</title>
+	<pageHeader height="12" splitType="Stretch"/>
+	<columnHeader height="13" splitType="Stretch"/>
+	<detail>
+		<band height="341" splitType="Stretch">
+			<element kind="textField" uuid="9c8ec545-1266-4f45-ab7b-512ab560834f" x="110" y="0" width="100" height="20">
+				<expression><![CDATA[$F{PatientName}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a11f9fe4-8d32-4510-89df-5fee7b46efc4"/>
+			</element>
+			<element kind="textField" uuid="517e5578-311c-4ec3-8abe-bf264c8ee104" x="110" y="20" width="100" height="20">
+				<expression><![CDATA[$F{PatientAge}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c06f8a83-95bf-4e8b-bbd8-a9f8163a9922"/>
+			</element>
+			<element kind="textField" uuid="3ef336c9-f7d3-4f70-bd45-2c7d1f50ea44" x="110" y="40" width="100" height="20">
+				<expression><![CDATA[$F{Service}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3f8426d4-013d-4e5d-838b-ebf975ded547"/>
+			</element>
+			<element kind="textField" uuid="45cbd850-6b48-4629-921f-46729753b757" x="280" y="70" width="100" height="20">
+				<expression><![CDATA["₱ "+$F{ServiceCost}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ee3be1fa-f5a1-4c7c-82c2-eecc78f69b1d"/>
+			</element>
+			<element kind="textField" uuid="6aabe9c1-0892-4251-a352-664e286dac74" x="280" y="110" width="100" height="20">
+				<expression><![CDATA["₱ "+$F{SupplyCost}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6771cdfb-ede1-4a21-96ba-7c1fa9630e2a"/>
+			</element>
+			<element kind="textField" uuid="6bde303c-f63e-4352-b969-dcfc0f342ef1" x="280" y="130" width="100" height="20">
+				<expression><![CDATA["₱ "+$F{BaseCost}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="24c1bbf1-fd32-4326-89df-d9d69e0daf19"/>
+			</element>
+			<element kind="textField" uuid="3f419d73-2fc6-4387-8de3-9c90c90d0800" x="280" y="90" width="100" height="20">
+				<expression><![CDATA["₱ "+$F{Discount}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d2aba4d8-d538-4a1e-824d-517acedd0ce4"/>
+			</element>
+			<element kind="textField" uuid="b323cd7e-2e89-437a-b7d8-66c1426f01c0" x="280" y="150" width="100" height="20">
+				<expression><![CDATA["₱ "+$F{SubTotal}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="91f75624-9a72-44dc-8fe0-e9e9823cfdee"/>
+			</element>
+			<element kind="textField" uuid="a70d951e-c6e7-440b-ad9d-d9e1bdad1967" x="280" y="175" width="100" height="23">
+				<expression><![CDATA["₱ "+$F{TotalAmountDue}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="757d5b7f-7b17-4092-bb9e-46bf5ae4bdbf"/>
+			</element>
+			<element kind="textField" uuid="f387a092-9c25-4889-8d1c-4a2ce329c4ac" x="110" y="220" width="100" height="20">
+				<expression><![CDATA[$F{PhilHealthID}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="154e109f-3b50-47e0-b132-53474c2e056b"/>
+			</element>
+			<element kind="textField" uuid="c8b8678c-8004-4f88-928c-2ad4b40d3224" x="280" y="240" width="100" height="20">
+				<expression><![CDATA["₱ "+$F{PhilHealthAmount}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c162209b-1ad6-4a6c-b0b7-494141ea18f5"/>
+			</element>
+			<element kind="textField" uuid="1fe2cdc6-44d1-4075-b214-3ee5c55a6d3d" x="280" y="198" width="100" height="22">
+				<expression><![CDATA["₱ "+$F{CashPaid}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e7c4cd8d-be90-458d-b5a3-96700c56ffc3"/>
+			</element>
+			<element kind="textField" uuid="dda3182c-3fac-415f-8125-1993a32c0be6" x="430" y="0" width="92" height="20" pattern="yyyy-MM-dd" hTextAlign="Left">
+				<expression><![CDATA[$F{TransactionDate}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8543d008-8709-4c84-8b80-bb40e12cc689"/>
+			</element>
+			<element kind="textField" uuid="f5cfae13-c11e-461e-9d82-6d3997fa5327" x="280" y="261" width="100" height="19">
+				<expression><![CDATA["₱ "+$F{Changes}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="10ec4663-93b1-4e5c-b901-5b5773872d6d"/>
+			</element>
+			<element kind="staticText" uuid="17ccaa90-ccbb-4e53-8687-a5f545a4854b" x="40" y="0" width="70" height="20">
+				<text><![CDATA[Patient Name:]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a11f9fe4-8d32-4510-89df-5fee7b46efc4"/>
+			</element>
+			<element kind="staticText" uuid="7526abad-b1ba-4883-8a53-bdf17b6cdd82" x="40" y="20" width="70" height="20">
+				<text><![CDATA[Patient Age:]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c06f8a83-95bf-4e8b-bbd8-a9f8163a9922"/>
+			</element>
+			<element kind="staticText" uuid="666da871-80f7-49f3-9878-ca53bf920135" x="40" y="40" width="70" height="20">
+				<text><![CDATA[Service:]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3f8426d4-013d-4e5d-838b-ebf975ded547"/>
+			</element>
+			<element kind="line" uuid="82b82842-fec8-4a89-83fc-d34161800ca8" x="40" y="62" width="480" height="1">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			</element>
+			<element kind="staticText" uuid="b6f7e60c-d121-4850-aac0-9ec65b6d31e2" x="110" y="70" width="100" height="20">
+				<text><![CDATA[Cost of Service:]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ee3be1fa-f5a1-4c7c-82c2-eecc78f69b1d"/>
+			</element>
+			<element kind="staticText" uuid="d584b225-740f-4bb6-bee2-8103cd3336f2" x="110" y="90" width="100" height="20">
+				<text><![CDATA[Discount;]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d2aba4d8-d538-4a1e-824d-517acedd0ce4"/>
+			</element>
+			<element kind="staticText" uuid="581cf885-b558-4da3-8e99-83b26b21ae95" x="110" y="110" width="100" height="20">
+				<text><![CDATA[Cost of Supply:]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6771cdfb-ede1-4a21-96ba-7c1fa9630e2a"/>
+			</element>
+			<element kind="staticText" uuid="a3640965-111f-4db8-a5b1-6bc80c21dba8" x="110" y="130" width="100" height="20">
+				<text><![CDATA[Total Base Cost:]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="24c1bbf1-fd32-4326-89df-d9d69e0daf19"/>
+			</element>
+			<element kind="staticText" uuid="9ad859b7-04d5-4d97-9c7b-3d13a21d04cc" x="110" y="150" width="100" height="20">
+				<text><![CDATA[Sub-total:]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="91f75624-9a72-44dc-8fe0-e9e9823cfdee"/>
+			</element>
+			<element kind="line" uuid="3eeaee0a-850a-4362-aa0e-9c862d346137" x="40" y="172" width="480" height="1">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			</element>
+			<element kind="staticText" uuid="8bd9f2c0-f703-45cb-9036-28e0566ffd10" x="110" y="175" width="100" height="24">
+				<text><![CDATA[Total Amount Due:]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="757d5b7f-7b17-4092-bb9e-46bf5ae4bdbf"/>
+			</element>
+			<element kind="staticText" uuid="f0c5f430-c6bb-4ba2-bbb0-fba02830a15d" x="110" y="199" width="100" height="21">
+				<text><![CDATA[Cash:]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e7c4cd8d-be90-458d-b5a3-96700c56ffc3"/>
+			</element>
+			<element kind="staticText" uuid="af555b3b-a154-4923-ba02-0b9ef42fc626" x="40" y="220" width="70" height="20">
+				<text><![CDATA[PhilHealth:]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="154e109f-3b50-47e0-b132-53474c2e056b"/>
+			</element>
+			<element kind="staticText" uuid="9a61a11d-6bc9-4e78-b62e-6da8be5086f1" x="110" y="240" width="100" height="20">
+				<text><![CDATA[PhilHealth Amount:]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c162209b-1ad6-4a6c-b0b7-494141ea18f5"/>
+			</element>
+			<element kind="line" uuid="27cadfbb-92fb-481e-9a6e-793d9587b405" x="40" y="260" width="480" height="1">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			</element>
+			<element kind="staticText" uuid="6b270bb4-8a8d-4722-9cc8-00496858e7b9" x="110" y="261" width="100" height="19">
+				<text><![CDATA[Change:]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="10ec4663-93b1-4e5c-b901-5b5773872d6d"/>
+			</element>
+			<element kind="staticText" uuid="34b2a2fa-93b0-4c43-8f1d-4124499b688e" x="338" y="0" width="90" height="20" hTextAlign="Left">
+				<text><![CDATA[Transaction Date:]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8543d008-8709-4c84-8b80-bb40e12cc689"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

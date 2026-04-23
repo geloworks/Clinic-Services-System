@@ -1,0 +1,97 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Service" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="067e8ca9-62d9-440a-8ab9-8ec68d7afc12">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ClinicDB.jrdax"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<query language="sql"><![CDATA[select * from Service]]></query>
+	<field name="ServiceID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="ServiceID"/>
+		<property name="com.jaspersoft.studio.field.label" value="ServiceID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="service"/>
+	</field>
+	<field name="ServiceName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ServiceName"/>
+		<property name="com.jaspersoft.studio.field.label" value="ServiceName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="service"/>
+	</field>
+	<field name="Price" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Price"/>
+		<property name="com.jaspersoft.studio.field.label" value="Price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="service"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="5" splitType="Stretch"/>
+	<pageHeader height="5" splitType="Stretch"/>
+	<columnHeader height="160" splitType="Stretch">
+		<element kind="staticText" uuid="aa6c33c9-b816-40d0-853d-a58b761ae584" x="40" y="97" width="298" height="40" forecolor="#000203" fontSize="27.0" hTextAlign="Left">
+			<text><![CDATA[Services List]]></text>
+		</element>
+		<element kind="rectangle" uuid="dd96d507-6771-4d48-8723-8fccf6b9e06a" x="40" y="140" width="160" height="20" forecolor="#030000" backcolor="#3C4753">
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="f4309636-38c0-4421-ab1b-5f6145d8577a" x="200" y="140" width="160" height="20" forecolor="#030000" backcolor="#3C4753">
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="0debb96e-1de3-4a78-9f8e-403c8ca15e0f" x="360" y="140" width="160" height="20" forecolor="#030000" backcolor="#3C4753">
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+		</element>
+		<element kind="staticText" uuid="377745e9-ff49-41f3-9ec1-ce45651bb30f" x="98" y="140" width="44" height="20" forecolor="#FFFFFF" vTextAlign="Middle">
+			<text><![CDATA[ServiceID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d51876df-7ffc-460b-b5b9-b60cac29b033"/>
+		</element>
+		<element kind="staticText" uuid="fcc069ba-81e5-4163-af50-1fe01e7d9185" x="248" y="140" width="64" height="20" forecolor="#FFFFFF" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[ServiceName]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d0e5f4dc-4550-4a65-b5d7-0ed4592a5e70"/>
+		</element>
+		<element kind="staticText" uuid="f248b18a-0f20-4e8e-950f-4dbcc8881a89" x="420" y="140" width="50" height="20" forecolor="#FFFFFF" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Price]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0dd0b323-90e2-4b33-9df2-191796cfc7d1"/>
+		</element>
+		<element kind="image" uuid="c34cbd24-36bd-4ed6-b0a4-2b0a34a8668b" x="438" y="19" width="51" height="49">
+			<expression><![CDATA["C:/Users/Angelo Javier/Downloads/IconLogo.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="4db3d708-658e-479d-9db6-be132a159a81" x="40" y="56" width="298" height="40" forecolor="#1FB1DE" fontSize="27.0" hTextAlign="Left">
+			<text><![CDATA[MEDICAL SERVICE]]></text>
+		</element>
+		<element kind="rectangle" uuid="8bf0a0d8-b8f1-4cad-8a9d-deb0f5aaa7c4" x="0" y="0" width="270" height="30" forecolor="#3C4753" backcolor="#3C4753"/>
+		<element kind="staticText" uuid="1aa19414-9b55-4046-b455-a14d35419a9d" x="412" y="64" width="110" height="30" fontSize="21.0" hTextAlign="Left">
+			<text><![CDATA[MediTECH]]></text>
+		</element>
+		<element kind="line" uuid="3811e0ea-26f0-4ec5-8582-c64d35f4f244" x="40" y="96" width="480" height="1">
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<element kind="rectangle" uuid="d162209b-a13b-4538-bbf1-5f3cd4a3e2a6" x="40" y="0" width="160" height="30" forecolor="#030000" backcolor="#FFFFFF">
+				<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+			</element>
+			<element kind="rectangle" uuid="c805fe7f-b02d-4f5c-81e8-65f4644b1943" x="200" y="0" width="160" height="30" forecolor="#030000" backcolor="#FFFFFF">
+				<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+			</element>
+			<element kind="rectangle" uuid="cad7cda2-3c03-4a32-a39f-db4a0db4e7d1" x="360" y="0" width="160" height="30" forecolor="#030000" backcolor="#FFFFFF">
+				<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+			</element>
+			<element kind="textField" uuid="88b6e5d7-0a7c-41b7-9bf9-c74c48fd2e4c" x="65" y="4" width="100" height="20" vTextAlign="Middle">
+				<expression><![CDATA[$F{ServiceID}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d51876df-7ffc-460b-b5b9-b60cac29b033"/>
+			</element>
+			<element kind="textField" uuid="00818785-8131-4a5e-9c59-0321031d6f54" x="220" y="4" width="100" height="18" vTextAlign="Middle">
+				<expression><![CDATA[$F{ServiceName}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d0e5f4dc-4550-4a65-b5d7-0ed4592a5e70"/>
+			</element>
+			<element kind="textField" uuid="8263146c-3a61-41c9-a4b4-4914bea467d1" x="400" y="4" width="100" height="18">
+				<expression><![CDATA["₱ " + $F{Price}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0dd0b323-90e2-4b33-9df2-191796cfc7d1"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="30" splitType="Stretch">
+		<element kind="textField" uuid="bb59d450-e880-4253-b195-5536e9ea9caf" x="230" y="3" width="100" height="20" hTextAlign="Center">
+			<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+		</element>
+	</pageFooter>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
