@@ -16,3 +16,5 @@ Before you begin, ensure you have met the following requirements:
 - Database: MySQL Server 8.0 or higher.
 - Integrated Development Environment (IDE): Apache NetBeans (Version 28 recommended).
 - Reporting Tool: Jaspersoft Studio (for editing .jrxml receipt templates).
+
+## Setup Instructions
