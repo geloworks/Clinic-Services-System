@@ -1,8 +1,9 @@
+# Clinic-Services-System
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![NetBeans](https://img.shields.io/badge/NetBeans-1B6AC6?style=for-the-badge&logo=apachenetbeanside&logoColor=white)
 ![MySQL Workbench](https://img.shields.io/badge/MySQL_Workbench-00758F?style=for-the-badge&logo=mysql&logoColor=white)
-# Clinic-Services-System
+![JasperReports](https://img.shields.io/badge/JasperReports-0077B5?style=for-the-badge&logoColor=white)
 
 ## Overview
 The Clinic Services System is a digital assistant designed to replace paper records in a clinic. Built using Java, it connects to a MySQL database to store and retrieve all essential information such as patient medical history, supplies stock, staff accounts, and available services. So that your clinic data remains safe and organized.
